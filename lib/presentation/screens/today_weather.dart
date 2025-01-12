@@ -9,15 +9,15 @@ import 'package:revision_weather_app/presentation/widgets/hourly_temp_widget.dar
 import 'package:revision_weather_app/presentation/widgets/main_weather_widget.dart';
 import 'package:revision_weather_app/presentation/widgets/today_widget.dart';
 
-class WeatherScreen extends StatefulWidget {
+class TodayWeatherScreen extends StatefulWidget {
   final String cityName;
-  const WeatherScreen({super.key, required this.cityName});
+  const TodayWeatherScreen({super.key, required this.cityName});
 
   @override
-  State<WeatherScreen> createState() => _WeatherScreenState();
+  State<TodayWeatherScreen> createState() => _TodayWeatherScreenState();
 }
 
-class _WeatherScreenState extends State<WeatherScreen> {
+class _TodayWeatherScreenState extends State<TodayWeatherScreen> {
   @override
   void initState() {
     super.initState();
@@ -64,8 +64,6 @@ class _WeatherScreenState extends State<WeatherScreen> {
                         end: Alignment.bottomLeft,
                         colors: [
                           Color.fromARGB(255, 1, 36, 65),
-                          // Color.fromARGB(255, 1, 61, 110),
-                          // Color.fromARGB(255, 1, 72, 131),
                           Color.fromARGB(255, 102, 2, 120),
                           AppColors.endColor,
                         ],

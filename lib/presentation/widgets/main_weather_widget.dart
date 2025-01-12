@@ -20,7 +20,7 @@ class MainWeatherWidget extends StatelessWidget {
               icon,
               width: 200.w,
               height: 200.h,
-              fit: BoxFit.contain,
+              fit: BoxFit.cover,
             ),
             customTextStyle(
               text:

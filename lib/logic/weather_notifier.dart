@@ -41,4 +41,12 @@ class WeatherNotifier extends ChangeNotifier {
     String? monthName = monthNames[monthNumber];
     return "$monthName, $day";
   }
+
+  String getWeekdayName({required String dateStr}) {
+    DateTime date = DateTime.parse(dateStr);
+
+    List<String> weekdays = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+
+    return weekdays[date.weekday - 1];
+  }
 }

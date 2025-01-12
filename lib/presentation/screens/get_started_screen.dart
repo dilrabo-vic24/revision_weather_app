@@ -1,8 +1,6 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:revision_weather_app/presentation/screens/weather_screen.dart';
+import 'package:revision_weather_app/presentation/screens/today_weather.dart';
 import 'package:revision_weather_app/presentation/utils/app_images.dart';
 import 'package:revision_weather_app/presentation/utils/custom_text_style.dart';
 
@@ -69,7 +67,7 @@ class GetStartedScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => WeatherScreen(
+                            builder: (context) => TodayWeatherScreen(
                               cityName: placeController.text.trim(),
                             ),
                           ),

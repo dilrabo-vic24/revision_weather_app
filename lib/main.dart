@@ -4,8 +4,6 @@ import 'package:provider/provider.dart';
 import 'package:revision_weather_app/database/model/weather_repo.dart';
 import 'package:revision_weather_app/logic/weather_notifier.dart';
 import 'package:revision_weather_app/presentation/screens/get_started_screen.dart';
-import 'package:revision_weather_app/presentation/screens/weather_screen.dart';
-import 'package:revision_weather_app/presentation/screens/weekly_weather.dart';
 
 void main() {
   runApp(ChangeNotifierProvider(
